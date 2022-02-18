@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+/********************************/
+/*******TOP-NAVIGATION-LOGO******/
+/********************************/
+
 .main-header {
 	background-color: #1f2937;
 }
@@ -14,24 +18,48 @@
 }
 
 .top-nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1em;
+	padding-left: 11em;
+	padding-right: 11em;
 }
 
 .main-nav ul {
+	display: flex;
+	gap: 2em;
 }
 
 ul,
 li,
 a {
-	/* padding: 0; */
-	/* margin: 0; */
 	text-decoration: none;
 	list-style-type: none;
 	color: #e5e7eb;
 	font-size: 18px;
 }
 
-.button {
-	background-color: #3882f6;
+.top {
+	display: flex;
+	justify-content: space-around;
+}
+
+.top-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	padding: 3em;
+}
+
+.top-text,
+button {
+	align-self: flex-start;
+}
+
+.top-image {
+	padding: 3em;
 }
 
 h2 {
@@ -44,6 +72,10 @@ p {
 	color: #e5e7eb;
 	font-size: 18px;
 }
+
+/******************************/
+/********MIDDLE-SECTION********/
+/******************************/
 
 h3 {
 	color: #1f2937;
@@ -63,13 +95,19 @@ figcaption {
 	background-color: #e5e7eb;
 }
 
-.text p {
+/*****************************/
+/********QUOTE-SECTION********/
+/*****************************/
+.quote p {
 	font-size: 36px;
 	color: #1f2937;
 	font-style: italic;
 	font-weight: lighter;
 }
 
+/****************************/
+/******SIGN-UP SECTION*******/
+/****************************/
 .signup {
 	background-color: #3882f6;
 }
@@ -78,11 +116,35 @@ h4 {
 	color: #e5e7eb;
 }
 
-.bottom {
-	border: 1px solid #e5e7eb;
-}
+/***************************/
+/*******FOOTER*************/
+/*************************/
 
 footer {
 	background-color: #1f2937;
 	color: #e5e7eb;
+}
+
+h3 {
+	text-align: center;
+}
+
+.gallery {
+	display: flex;
+}
+
+/*************************/
+/*********BUTTONS*********/
+/*************************/
+
+.button {
+	background-color: #3882f6;
+	padding: 0.2em 2em;
+	border-radius: 7px;
+	color: #e5e7eb;
+	margin-top: 0.3em;
+}
+
+.bottom {
+	border: 1px solid #e5e7eb;
 }
