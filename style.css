@@ -153,6 +153,7 @@ figcaption {
 	position: absolute;
 	bottom: 1.5em;
 	right: 13em;
+	font-weight: bolder;
 }
 
 /****************************/
