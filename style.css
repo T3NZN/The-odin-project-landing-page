@@ -21,19 +21,21 @@ body {
 .logo {
 	color: #f9faf8;
 	font-size: 24px;
+	font-weight: 1200;
 }
 
 .top-nav {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 1em;
-	padding-left: 5em;
-	padding-right: 5em;
+	padding-left: 9em;
+	padding-right: 9em;
 }
 
 .main-nav ul {
 	display: flex;
-	gap: 2em;
+	gap: 1.5em;
+	margin-right: 3.5em;
 }
 
 ul,
@@ -43,15 +45,20 @@ a {
 	list-style-type: none;
 	color: #e5e7eb;
 	font-size: 18px;
+	font-weight: 100;
+}
+
+a:hover {
+	border-bottom: 0.2em solid #3882f6;
 }
 
 .top {
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
-	padding-left: 10em;
-	padding-top: 4em;
-	padding-bottom: 2em;
+	max-width: 90%;
+	padding-left: 9em;
+	padding-top: 3.5em;
+	padding-bottom: 4em;
 }
 
 .top-text {
@@ -59,7 +66,8 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 500px;
+	width: 490px;
+	margin-top: -5em;
 }
 
 .top-text > .button,
@@ -75,11 +83,13 @@ h2 {
 	color: #f9faf8;
 	font-size: 48px;
 	font-weight: 1200;
+	line-height: 1.2em;
 }
 
 p {
 	color: #e5e7eb;
 	font-size: 18px;
+	font-stretch: expanded;
 }
 
 /******************************/
@@ -88,22 +98,23 @@ p {
 
 .middle {
 	max-width: 100%;
+	margin-bottom: 5em;
 }
 
 .gallery {
 	display: flex;
 	gap: 2em;
 	margin-top: 2em;
-	margin-right: 9em;
-	margin-left: 14em;
 	align-items: center;
 	justify-content: center;
-	max-width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 h3 {
 	text-align: center;
 	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 	color: #1f2937;
 	font-size: 36px;
 	font-weight: 1200;
@@ -141,20 +152,19 @@ figcaption {
 	min-height: 350px;
 }
 
-.quote > * {
+.quote > p {
 	font-size: 36px;
 	color: #1f2937;
 	font-style: italic;
-	font-weight: light;
-	max-width: 800px;
+	font-weight: lighter;
+	max-width: 950px;
 	margin: auto;
-	margin-left: 10em;
 	padding-top: 2em;
 }
 
 .signature {
-	padding-left: 12em;
-	font-weight: bold;
+	padding-left: 17em;
+	font-style: normal;
 }
 
 /****************************/
@@ -162,28 +172,33 @@ figcaption {
 /****************************/
 
 .cta {
-	min-height: 250px;
+	max-height: 250px;
+	margin-bottom: 5em;
 }
 
 .signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #3882f6;
 	width: 80%;
 	height: 130px;
 	margin: 0 auto;
 	border-radius: 3px;
-	/* padding: 2em; */
-	margin-top: 6em;
-	display: flex;
-	justify-content: space-between;
+	margin-top: 7em;
+	padding: 2em;
 }
 
 .signup p {
-	max-width: 500px;
+	font-size: 18px;
+	font-style: normal;
 }
 
+.signup,
 h4 {
 	color: #e5e7eb;
-	font-weight: bolder;
+	font-weight: 1200;
+	font-size: 24px;
 }
 
 /***************************/
@@ -220,4 +235,5 @@ footer {
 	margin-left: 50em;
 	margin-bottom: 4em;
 	position: relative;
+	margin-top: 3.5em;
 }
