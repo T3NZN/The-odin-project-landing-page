@@ -16,6 +16,7 @@ body {
 .main-header {
 	background-color: #1f2937;
 	width: 100%;
+	padding-left: 5em;
 }
 
 .logo {
@@ -89,7 +90,7 @@ h2 {
 p {
 	color: #e5e7eb;
 	font-size: 18px;
-	font-stretch: expanded;
+	line-height: 1.5em;
 }
 
 /******************************/
@@ -97,13 +98,13 @@ p {
 /******************************/
 
 .middle {
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 5em;
 }
 
 .gallery {
 	display: flex;
-	gap: 2em;
+	gap: 2.5em;
 	margin-top: 2em;
 	align-items: center;
 	justify-content: center;
@@ -123,9 +124,6 @@ h3 {
 .gallery img {
 	object-fit: cover;
 	border-radius: 8px;
-}
-
-figure {
 	width: 250px;
 }
 
@@ -163,7 +161,7 @@ figcaption {
 }
 
 .signature {
-	padding-left: 17em;
+	padding-left: 16em;
 	font-style: normal;
 }
 
@@ -182,7 +180,7 @@ figcaption {
 	align-items: center;
 	background-color: #3882f6;
 	width: 80%;
-	height: 130px;
+	max-height: 130px;
 	margin: 0 auto;
 	border-radius: 3px;
 	margin-top: 7em;
@@ -209,9 +207,9 @@ footer {
 	background-color: #1f2937;
 	color: #e5e7eb;
 	width: 100%;
-	min-height: 80px;
+	min-height: 100px;
 	text-align: center;
-	padding-top: 1.5em;
+	padding-top: 1.8em;
 }
 
 /*************************/
@@ -225,9 +223,6 @@ footer {
 	color: #e5e7eb;
 	margin-top: 0.7em;
 	border: none;
-}
-
-.btn-top {
 }
 
 .btn-bottom {
