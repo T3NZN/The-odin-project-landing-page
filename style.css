@@ -17,26 +17,28 @@ body {
 	background-color: #1f2937;
 	width: 100%;
 	padding-left: 5em;
+	padding-bottom: 3em;
 }
 
 .logo {
 	color: #f9faf8;
 	font-size: 24px;
-	font-weight: 1200;
+	font-weight: 900;
+	padding-left: 9em;
 }
 
 .top-nav {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 1em;
-	padding-left: 9em;
-	padding-right: 9em;
+	padding-top: 1.5em;
+	margin: auto;
 }
 
 .main-nav ul {
 	display: flex;
 	gap: 1.5em;
 	margin-right: 3.5em;
+	padding-right: 10em;
 }
 
 ul,
@@ -49,17 +51,15 @@ a {
 	font-weight: 100;
 }
 
-a:hover {
-	border-bottom: 0.2em solid #3882f6;
+li:hover {
+	color: #3882f6;
 }
 
 .top {
 	display: flex;
 	justify-content: space-between;
-	max-width: 90%;
-	padding-left: 9em;
-	padding-top: 3.5em;
-	padding-bottom: 4em;
+	max-width: 1200px;
+	margin: 4em auto;
 }
 
 .top-text {
@@ -68,7 +68,6 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	width: 490px;
-	margin-top: -5em;
 }
 
 .top-text > .button,
@@ -78,12 +77,14 @@ a:hover {
 
 .top-image {
 	padding: 2em;
+	max-height: 400px;
+	height: auto;
 }
 
 h2 {
 	color: #f9faf8;
 	font-size: 48px;
-	font-weight: 1200;
+	font-weight: 900;
 	line-height: 1.2em;
 }
 
@@ -117,22 +118,24 @@ h3 {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	color: #1f2937;
-	font-size: 36px;
-	font-weight: 1200;
+	font-size: 48px;
+	font-weight: 900;
 }
 
 .gallery img {
 	object-fit: cover;
 	border-radius: 8px;
-	width: 250px;
+	/* width: 250px; */
 }
 
+.gallery,
 figcaption {
 	color: #1f2937;
-	line-height: 1.5em;
 	text-align: center;
 	min-height: 100px;
-	min-width: 250px;
+	width: 210px;
+	font-size: 18px;
+	font-weight: 100;
 	color: #1f2937;
 }
 
@@ -154,15 +157,16 @@ figcaption {
 	font-size: 36px;
 	color: #1f2937;
 	font-style: italic;
-	font-weight: lighter;
+	font-weight: light;
 	max-width: 950px;
 	margin: auto;
 	padding-top: 2em;
 }
 
 .signature {
-	padding-left: 16em;
+	margin-left: 35em;
 	font-style: normal;
+	font-size: 18px;
 }
 
 /****************************/
@@ -170,33 +174,40 @@ figcaption {
 /****************************/
 
 .cta {
-	max-height: 250px;
+	height: 250px;
 	margin-bottom: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .signup {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
 	background-color: #3882f6;
 	width: 80%;
-	max-height: 130px;
-	margin: 0 auto;
+	height: 130px;
 	border-radius: 3px;
-	margin-top: 7em;
-	padding: 2em;
+	margin-top: 4em;
 }
 
-.signup p {
+.action {
+	display: flex;
+	flex-direction: column;
+}
+
+.action p {
 	font-size: 18px;
-	font-style: normal;
+	font-weight: 100;
 }
 
-.signup,
+.action,
 h4 {
 	color: #e5e7eb;
-	font-weight: 1200;
+	font-weight: 800;
 	font-size: 24px;
+	align-self: flex-start;
+	margin-top: 0.7em;
 }
 
 /***************************/
@@ -208,8 +219,13 @@ footer {
 	color: #e5e7eb;
 	width: 100%;
 	min-height: 100px;
-	text-align: center;
-	padding-top: 1.8em;
+}
+
+footer,
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*************************/
@@ -223,12 +239,9 @@ footer {
 	color: #e5e7eb;
 	margin-top: 0.7em;
 	border: none;
+	cursor: pointer;
 }
 
 .btn-bottom {
 	border: 1px solid #e5e7eb;
-	margin-left: 50em;
-	margin-bottom: 4em;
-	position: relative;
-	margin-top: 3.5em;
 }
