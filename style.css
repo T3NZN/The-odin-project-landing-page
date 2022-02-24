@@ -23,6 +23,7 @@ body {
 	color: #f9faf8;
 	font-size: 24px;
 	font-weight: 900;
+	font-style: normal;
 }
 
 .top-nav {
@@ -46,6 +47,7 @@ a {
 	color: #e5e7eb;
 	font-size: 18px;
 	font-weight: 100;
+	font-style: normal;
 }
 
 li:hover {
@@ -80,15 +82,17 @@ li:hover {
 }
 
 h2 {
-	color: #f9faf8;
+	color: #fafbf9;
 	font-size: 48px;
 	font-weight: 900;
+	font-style: normal;
 	line-height: 1.2em;
 }
 
 p {
-	color: #e5e7eb;
+	color: #f9faf8;
 	font-size: 18px;
+	font-style: normal;
 	line-height: 1.5em;
 }
 
@@ -126,15 +130,16 @@ h3 {
 	margin-right: auto;
 }
 
-.gallery,
-figcaption {
+.gallery figcaption {
 	color: #1f2937;
 	text-align: center;
 	min-height: 100px;
 	width: 210px;
 	font-size: 18px;
 	font-weight: 100;
+	font-style: normal;
 	color: #1f2937;
+	filter: contrast(20%);
 }
 
 .text {
@@ -149,23 +154,58 @@ figcaption {
 	background-color: #e5e7eb;
 	width: 100%;
 	min-height: 350px;
+	margin: 0;
 }
 
-.quote > p {
+ blockquote {
 	font-size: 36px;
 	color: #1f2937;
 	font-style: italic;
-	font-weight: light;
-	max-width: 875px;
-	margin: auto;
+	font-weight: 400;
+	max-width: 870px;
+	margin: 0 auto;
 	padding-top: 2em;
-	padding-bottom: 2em;
 }
 
-.signature {
-	margin-left: 30em;
+blockquote .signature {
+	font-weight: 900;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 20px;
+	float: right; 
+	padding-top: 2em;
+}
+
+q::before,
+q::after {
+	animation: dancing-quotes 1s linear infinite;
+	display: inline-block;
+	transform: rotate(13deg);
+}
+
+@keyframes dancing-quotes{
+	0% {
+		transform: rotate(13deg) scale(2);
+	}
+
+	25% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(-13deg) scale(2);
+	}
+
+	75% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(13deg) scale(2);
+	}
+}
+
+q {
+	quotes: """ ;
 }
 
 /****************************/
@@ -190,6 +230,10 @@ figcaption {
 	margin-top: 4em;
 }
 
+.signup :last-child {
+	align-self: center;
+}
+
 .action {
 	display: flex;
 	flex-direction: column;
@@ -199,6 +243,7 @@ figcaption {
 	font-size: 17px;
 	font-weight: 100;
 	color: #e5e7eb;
+	filter: contrast(50%);
 }
 
 .action,
@@ -221,11 +266,11 @@ footer {
 	min-height: 100px;
 }
 
-footer,
-div {
+footer,.copyright {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 /*************************/
