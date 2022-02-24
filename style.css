@@ -16,7 +16,7 @@ body {
 .main-header {
 	background-color: #1f2937;
 	min-width: 100%;
-	padding-bottom: 3em;
+	padding-bottom: 3.5em;
 }
 
 .logo {
@@ -77,9 +77,9 @@ li:hover {
 }
 
 .top-image {
-	max-height: 400px;
-	height: auto;
+	object-fit: cover;
 }
+
 
 h2 {
 	color: #fafbf9;
