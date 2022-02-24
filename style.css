@@ -171,8 +171,9 @@ blockquote .signature {
 	font-weight: 900;
 	font-style: normal;
 	font-size: 20px;
-	float: right; 
+	text-align: right; 
 	padding-top: 2em;
+	color: #1f2937;
 }
 
 q::before,
