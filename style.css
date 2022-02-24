@@ -266,11 +266,11 @@ footer {
 	min-height: 100px;
 }
 
-footer,.copyright {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+.copyright {
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+	padding-top: 2.5em;
 }
 
 /*************************/
