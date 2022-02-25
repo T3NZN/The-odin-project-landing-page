@@ -50,7 +50,7 @@ a {
 	font-size: 18px;
 	font-weight: 100;
 	font-style: normal;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 a:hover {
@@ -74,7 +74,7 @@ a:hover {
 	margin-right: auto;
 }
 
-.top-text > .button,
+.top-text .button,
 .top-btn {
 	align-self: flex-start;
 }
@@ -82,7 +82,6 @@ a:hover {
 .top-image {
 	object-fit: cover;
 }
-
 
 h2 {
 	color: #fafbf9;
@@ -160,7 +159,7 @@ h3 {
 	margin: 0;
 }
 
- blockquote {
+blockquote {
 	font-size: 36px;
 	color: #1f2937;
 	font-style: italic;
@@ -174,7 +173,7 @@ blockquote .signature {
 	font-weight: 900;
 	font-style: normal;
 	font-size: 20px;
-	text-align: right; 
+	text-align: right;
 	padding-top: 2em;
 	color: #1f2937;
 }
@@ -186,7 +185,7 @@ q::after {
 	transform: rotate(13deg);
 }
 
-@keyframes dancing-quotes{
+@keyframes dancing-quotes {
 	0% {
 		transform: rotate(13deg) scale(2);
 	}
@@ -206,10 +205,6 @@ q::after {
 	100% {
 		transform: rotate(13deg) scale(2);
 	}
-}
-
-q {
-	quotes: """ ;
 }
 
 /****************************/
@@ -250,13 +245,11 @@ q {
 	filter: contrast(50%);
 }
 
-.action,
-h4 {
+.action h4 {
 	color: #e5e7eb;
 	font-weight: 800;
 	font-size: 24px;
-	align-self: flex-start;
-	margin-top: 0.7em;
+	margin-top: 1.5em;
 }
 
 /***************************/
@@ -294,4 +287,85 @@ footer {
 
 .btn-bottom {
 	border: 1px solid #e5e7eb;
+}
+
+/***********************/
+/******RESPONSIVE******/
+/*********************/
+
+@media screen and (max-width: 500px) {
+	* {
+		padding: 0.2em;
+	}
+	.top-nav {
+		flex-direction: column;
+	}
+	.main-nav ul a {
+		place-items: left;
+		gap: 0.8em;
+		font-size: 14px;
+	}
+	.logo {
+		border-bottom: 2px solid #e5e7eb;
+		margin-bottom: 0.3em;
+		padding-bottom: 0.8em;
+	}
+	.top {
+		flex-direction: column;
+		gap: 2em;
+	}
+	h2 {
+		font-size: 32px;
+		border-bottom: 2px solid #e5e7eb;
+	}
+
+	.top-text {
+		width: 100%;
+	}
+
+	.top-text p {
+		font-size: 15px;
+		text-align: center;
+		margin: auto;
+		padding-top: 0.5em;
+		padding-bottom: 3em;
+	}
+	.btn-top {
+		margin: auto;
+	}
+
+	.top-image img {
+		width: 100%;
+	}
+}
+/*************MIDDLE-SECTION**********/
+@media screen and (max-width: 500px) {
+	.gallery {
+		flex-direction: column;
+	}
+}
+
+/**************QUOTE-SECTION*********/
+@media screen and (max-width: 500px) {
+	.quote {
+		width: 100%;
+		margin: auto;
+		padding: 1em;
+		border-radius: 8px;
+	}
+}
+
+/****************CALL-TO-ACTION**********/
+@media screen and (max-width: 500px) {
+	.signup {
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+	.action {
+		text-align: center;
+	}
+	footer.copyright {
+		width: 100%;
+	}
 }
